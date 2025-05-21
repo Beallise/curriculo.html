@@ -1,0 +1,139 @@
+/* página geral*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+}
+
+/* Barra lateral */
+.barralateral {
+  width: 250px;
+  height: 100vh;
+  background-color: #520627;
+  color: white;
+  padding: 20px;
+}
+
+/* principal */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Nome */
+h1 {
+  color: #740938;
+  margin: 10px 0 5px 0;
+}
+
+/* subtitulo */
+.subtitle {
+  font-size: 16px;
+  color: #CC2B52;
+}
+
+/* títulos */
+h2 {
+  color:#740938;
+  margin-top: 30px;
+}
+
+/* Textos e listas */
+p, li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* divisao barra_.barra_esquerda */
+.barra_esquerda hr {
+  border: 0.5px solid #740938;
+  margin: 10px 0;
+}
+
+/* Seções dentro do barra_.barra_esquerda */
+.barra_esquerda-section {
+  margin-bottom: 20px;
+}
+
+/* Título das seções no barra_.barra_esquerda */
+.barra_esquerda h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+/* Listas no barra_.barra_esquerda */
+.barra_esquerda ul {
+  list-style: none;
+  padding: 0;
+}
+
+.barra_esquerda ul li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+}
+
+/* mudando tamanho de tela */
+
+/*  máximo 768px  */
+@media (max-width: 768px) {
+  body {
+      flex-direction: column; /* Muda o layout para coluna */
+  }
+
+  .barra_esquerda {
+      width: 100%; /* Ocupa 100% da largura */
+      padding: 15px;
+      text-align: center; /* Centraliza conteúdo */
+  }
+
+  .main {
+      padding: 20px;
+  }
+
+  .profile-photo {
+      width: 80px;
+  }
+
+  h1 {
+      font-size: 22px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  p, li {
+      font-size: 13px;
+  }
+}
+
+/*  máximo 480px  */
+@media (max-width: 480px) {
+  .profile-photo {
+      width: 70px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  h2 {
+      font-size: 16px;
+  }
+
+  .barra_esquerda-section h3 {
+      font-size: 14px;
+  }
+
+  .barra_esquerda ul li {
+      font-size: 13px;
+  }
+}
